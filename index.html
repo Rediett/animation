@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/stortest-45ecb.appspot.com/o/galler%2Fbinary.001.png?alt=media&token=30ffaad9-5e14-422d-98f8-4c561eebe3ad">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<title>anim</title>
+	<style type="text/css">
+		html, body{
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		.hom{
+			width: 100%;
+			height: 54%;
+			background-size: cover;
+			animation-name: bace;
+			animation-duration: 2s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+
+			padding-top: 382px;
+		}
+		@keyframes bace{
+			from{
+				background: linear-gradient(45deg, #0b42d6b0,#8e24d0db);
+			}
+			to{
+				background: linear-gradient(45deg, #0b42d6,#04d0db);
+			}
+		}
+		.hom h1{
+			margin: 0;
+			font-size: 130px;
+			animation-name: up;
+			animation-duration: 2s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+			
+		}
+		@keyframes up{
+			from{
+				transform: all translateY(0) scale(0.5);
+				-webkit-transform: scale(0.5);
+			}
+			to{
+				transform: translateY(-250px) scale(1.0);
+			}
+		}
+		.hom a{
+			font-size: 30px;
+			background: transparent;
+			color: white;
+			font-family: serif;
+			margin-top: 30px;
+			padding: 20px;
+			border-radius: 10px;
+			border: 2px solid #04d0db;
+			-webkit-transition: background 2s;
+			transition: background 2s;
+		}
+		.hom a:hover{
+			background: #04d0db;
+		}
+
+		.con{
+			width: 100%;
+			height: 90%;
+			background-size: cover;
+			animation-name: bace;
+			animation-duration: 2s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			padding-top: 80px;
+		}
+		.con textarea{
+			width: 90%;
+			height: 200px;
+			border-radius: 11px;
+			font-size: 20px;
+		}
+		.con h2{
+			font-size: 100px;
+			margin:0;
+			animation-name: upp;
+			animation-duration: 2s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		@keyframes upp{
+			from{
+				transform: all scale(0.5);
+				-webkit-transform: scale(0.5);
+			}
+			to{
+				transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+			}
+		}
+		.con .button{
+			width: 80%;
+			height: 70px;
+			margin: 20px;
+			padding: 10px;
+			letter-spacing: 1px;
+			border-radius: 8px;
+			animation-name: tex;
+			animation-duration: 0.8s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+			font-size: 30px;
+			text-align: center;
+		}
+		@keyframes tex{
+			from{
+				transform: all letter-spacing font-weight;
+			}
+			to{
+				letter-spacing: 100px;font-weight: bolder; 
+			}
+		}
+		.but{
+			width: 100%;
+			height: 100px;
+			margin: 0;
+		}
+		.cir{
+			fill: #04d0db;
+		}
+		.pat{
+			fill: #04d0db;
+			animation-name: leftt;
+			animation-duration: 0.8s;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		@keyframes leftt{
+			from{
+				transform: all fill translateX(0);
+			}
+			to{
+				transform: translateX(-33px);fill: white;
+			}
+		}
+	</style>
+	<script>
+  		import AOS from 'aos';
+		import 'aos/dist/aos.css'; // You can also use <link> for styles
+		AOS.init();
+	</script>
+</head>
+<body>
+<div id="home" class="hom" data-aos="slide-down">
+	<center>
+		<h1>
+			TAXT TO BINARY
+		</h1>
+		<a onclick="go()"><span style="font-size: 40px">-></span> CONVERTER</a>
+	</center>
+</div>
+<div id="convert" class="con">
+	<center>
+		<h2>Convert text to binary</h2>
+		<textarea id="op" placeholder=" Type here" spellcheck></textarea>
+		<input type="button" name="button" onclick="myFunction()" value="Convert" class="button">
+		<textarea rows="4" cols="50" id="demo" readonly></textarea>
+	</center>
+	<div class="but"><svg width="120" height="86" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <a onclick="hu()">
+ <g class="layer">
+  <title>Layer 1</title>
+  <ellipse cx="81" cy="43" fill="#7f3f00" id="svg_4" rx="38.5" ry="39.5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" class="cir"/>
+  <path d="m95.5,63.18816l-0.12537,11.81185l-42.37463,-29.05923l40.8702,-30.94077l-1.00294,12.3345l-23.82006,18.39721l26.4528,17.45645l-0.00001,0l0.00001,-0.00001z" fill="#cccccc" id="svg_6" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" class="pat" />
+ </g></a>
+</svg></div>
+	<script>
+		document.getElementById('demo').setAttribute("placeholder", "01");
+	function myFunction() {
+	    var str = document.getElementById("op").value;
+	    var di = {" ":"00100000","A":'01000001',"B":'01000010',"C":'01000011',"D":'01000100',"E":'01000101',"F":'01000110',"G":'01000111',"H":'01001000',"I":'01001001',"J":'01001010',"K":'01001011',"L":'01001100',"M":'01001101',"N":'01001110',"O":'01001111',"P":'01010000',"Q":'01010001',"R":'01010010',"S":'01010011',"T":'01010100',"U":'01010101',"V":'01010110',"W":'01010111',"X":'01011000',"Y":'01011001',"Z":'01011010','a':'01100001', 'b':'01100010', 'c':'01100011', 'd':'01100100', 'e':'01100101', 'f':'01100110', 'g':'01100111', 'h':'01101000', 'i':'01101001', 'j':'01101010', 'k':'01101011', 'l':'01101100', 'm':"01101101", 'n':'01101110', 'o':'01101111', 'p':'01110000', 'q':'01110001', 'r':'01110010', 's':'01110011', 't':'01110100', 'u':'01110101', 'v':'01110110', 'w':'01110111', 'x':'01111000', 'y':'01111001', 'z':'01111010'}
+	    var go = [];
+	    var ans = []
+	    for (var i = str.length -1 ; i >= 0; i--) {
+	    	ans.push(" "+str[i]+" - "+di[str[i]])
+	    }
+	    bye = ans.reverse()
+	    document.getElementById('demo').innerHTML = bye.join(" ");
+	}
+	</script>
+</div>
+<script>
+	var h = document.getElementById('home');
+	var c = document.getElementById('convert');
+	h.style.display ="block";
+	c.style.display = "none";
+	function go() {
+		h.style.display = "none";
+		c.style.display = "block";	
+	}
+	function hu() {
+		h.style.display = "block";
+		c.style.display = "none";	
+	}
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+  duration: 1200,
+})
+
+  </script>
+</body>
+</html>
